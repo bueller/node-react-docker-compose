@@ -21,7 +21,7 @@ app.get('/api', (req, res) => {
   let data = {
     message: 'Hello world, Dillon!!!!'
   };
-  console.log('dilllioim');
+  console.log('dim');
   res.send(JSON.stringify(data, null, 2));
 });
 
