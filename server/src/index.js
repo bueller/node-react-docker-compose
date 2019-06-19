@@ -19,8 +19,9 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json');
   let data = {
-    message: 'Hello world, Woooooeeeee!!!!'
+    message: 'Hello world, Paul!!!!'
   };
+  console.log('red sea adventures');
   res.send(JSON.stringify(data, null, 2));
 });
 
