@@ -19,9 +19,10 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json');
   let data = {
-    message: 'Hello world, Woooooeeeee!!!!'
+    message: 'Hello world, Woooooeeeee!!!!new gh test commit'
   };
   res.send(JSON.stringify(data, null, 2));
+  console.log('new GH test commit');
 });
 
 // All remaining requests return the React app, so it can handle routing.
