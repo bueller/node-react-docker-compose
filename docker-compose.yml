@@ -18,7 +18,7 @@ services:
   client:
     labels:
       shipyard.route: '/'
-      benjie.test: 2
+      benjie.test: 3
     build: client/
     command: npm start
     environment:
