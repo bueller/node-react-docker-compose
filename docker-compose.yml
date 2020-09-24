@@ -2,7 +2,7 @@ version: '2'
 
 services:
 
-  server:
+  server_1:
     build: server/
     command: /usr/app/node_modules/.bin/nodemon src/index.js
     volumes:
@@ -15,7 +15,7 @@ services:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
 
-  client:
+  client_1:
     labels:
       shipyard.route: '/'
     build: client/
@@ -26,6 +26,6 @@ services:
       - ./client/:/usr/app
       - /usr/app/node_modules
     depends_on:
-      - server
+      - server_1
     ports:
       - "3000:3000"
