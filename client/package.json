@@ -19,5 +19,5 @@
     "start-js": "react-scripts start",
     "build-js": "react-scripts build"
   },
-  "proxy": "http://server:8080"
+  "proxy": "http://server_1:8080"
 }
