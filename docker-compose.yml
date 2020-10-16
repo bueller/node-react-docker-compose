@@ -18,6 +18,7 @@ services:
   client:
     labels:
       shipyard.route: '/'
+      shipyard.before: 'pwd'
     build: client/
     command: npm start
     environment:
