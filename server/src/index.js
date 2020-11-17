@@ -19,7 +19,7 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json');
   let data = {
-    message: 'Hello world, Woooooeeeee!!!!Hi Mike'
+    message: 'Hello world, Woooooeeeee!!!!Hi Mike, great to see you'
   };
   res.send(JSON.stringify(data, null, 2));
   console.log('Hello from the console as well!');
