@@ -22,7 +22,7 @@ app.get('/api', (req, res) => {
     message: 'Hello world, Woooooeeeee!!!!Steve Boak'
   };
   res.send(JSON.stringify(data, null, 2));
-  console.log('Steve Boak was in the console'):
+  console.log('Steve Boak was in the console');
 });
 
 // All remaining requests return the React app, so it can handle routing.
