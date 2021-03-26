@@ -14,7 +14,8 @@ services:
 
   client:
     labels:
-      shipyard.route: '/'
+      shipyard.route: '/client'
+      shipyard.route.rewrite: true
     build: client/
     command: npm start
     environment:
