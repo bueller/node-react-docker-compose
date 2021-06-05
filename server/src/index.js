@@ -19,7 +19,7 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json');
   let data = {
-    message: 'Hello world, Woooooeeeee!!!!'
+    message: 'Hello world, Woooooeeeee!!!!build keep alive test 2'
   };
   res.send(JSON.stringify(data, null, 2));
 });
