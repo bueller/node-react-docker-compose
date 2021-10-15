@@ -19,10 +19,10 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json');
   let data = {
-    message: 'Hello world, Woooooeeeee!!!!'
+    message: 'Hello world, Woooooeeeee!!!!Nikhil Arul were here'
   };
   res.send(JSON.stringify(data, null, 2));
-  console.log('Peter was in the console');
+  console.log('Nikhil and Arul was in the console');
 });
 
 // All remaining requests return the React app, so it can handle routing.
