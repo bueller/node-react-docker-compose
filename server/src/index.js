@@ -13,7 +13,7 @@ const CLIENT_BUILD_PATH = path.join(__dirname, '../../client/build');
 const app = express();
 
 // Static files
-app.use(express.static(CLIENT_BUILD_PATH));
+app.use(express.static(ZACH_PATH));
 
 // API
 app.get('/api', (req, res) => {
